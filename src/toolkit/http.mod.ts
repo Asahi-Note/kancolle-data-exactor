@@ -4,6 +4,7 @@ import axios, {
   AxiosResponseHeaders,
   RawAxiosResponseHeaders,
 } from 'axios';
+import {createWriteStream} from 'fs';
 /**
  * 統一回覆格式
  */
@@ -143,3 +144,33 @@ function HandleAxiosError(error: AxiosError) {
     config: error.config as AxiosRequestConfig, // 確保這裡的 config 是 AxiosRequestConfig 類型
   };
 }
+/**
+ * 下載檔案
+ * @param fileUrl
+ * @param outputLocationPath
+ * @returns
+ */
+export const DownloadFile = async (url: string, filePath: string) => {
+  const writer = createWriteStream(filePath);
+  if (waitRateMS !== 0) await Sleep(GetRateLimit());
+  try {
+    const response = await axios({
+      url,
+      method: 'GET',
+      responseType: 'stream',
+    });
+
+    response.data.pipe(writer);
+
+    writer.on('finish', () => {
+      console.log('File downloaded successfully');
+    });
+    writer.on('error', err => {
+      console.error('Error writing file', err);
+    });
+  } catch (error) {
+    // Handle errors
+    console.error('Error downloading file:', error);
+    throw error;
+  }
+};

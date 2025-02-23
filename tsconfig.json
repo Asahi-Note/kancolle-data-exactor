@@ -4,7 +4,8 @@
     "rootDir": ".",
     "outDir": "build",
     "lib": ["ES6"],
-    "module": "NodeNext"
+    "module": "NodeNext",
+    "resolveJsonModule": true
   },
   "include": ["src/**/*.ts", "test/**/*.ts"]
 }

@@ -1,4 +1,7 @@
-import './toolkit/date.func.js';
+import funcSandbox from './func.Sandbox.js';
 
-console.log('Hello from Toolkit');
-console.log('Tookit extension test:' + new Date().convertToDateTime());
+(async () => {
+  if (process.argv.includes('--vscode')) await funcSandbox();
+})().catch(err => {
+  console.error(err);
+});

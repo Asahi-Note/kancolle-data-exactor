@@ -60921,8 +60921,8 @@
         "api_name": "\u5927\u53e3\u5f84\u4e3b\u7832",
         "api_show_flg": 1
       },
-      { "api_id": 4, "api_name": "\u526f\u7832", "api_show_flg": 1 },
-      { "api_id": 5, "api_name": "\u9b5a\u96f7", "api_show_flg": 1 },
+      {"api_id": 4, "api_name": "\u526f\u7832", "api_show_flg": 1},
+      {"api_id": 5, "api_name": "\u9b5a\u96f7", "api_show_flg": 1},
       {
         "api_id": 6,
         "api_name": "\u8266\u4e0a\u6226\u95d8\u6a5f",
@@ -60963,8 +60963,8 @@
         "api_name": "\u5927\u578b\u96fb\u63a2",
         "api_show_flg": 1
       },
-      { "api_id": 14, "api_name": "\u30bd\u30ca\u30fc", "api_show_flg": 1 },
-      { "api_id": 15, "api_name": "\u7206\u96f7", "api_show_flg": 1 },
+      {"api_id": 14, "api_name": "\u30bd\u30ca\u30fc", "api_show_flg": 1},
+      {"api_id": 15, "api_name": "\u7206\u96f7", "api_show_flg": 1},
       {
         "api_id": 16,
         "api_name": "\u8ffd\u52a0\u88c5\u7532",
@@ -60985,7 +60985,7 @@
         "api_name": "\u5bfe\u8266\u5f37\u5316\u5f3e",
         "api_show_flg": 1
       },
-      { "api_id": 20, "api_name": "VT\u4fe1\u7ba1", "api_show_flg": 1 },
+      {"api_id": 20, "api_name": "VT\u4fe1\u7ba1", "api_show_flg": 1},
       {
         "api_id": 21,
         "api_name": "\u5bfe\u7a7a\u6a5f\u9283",
@@ -61026,7 +61026,7 @@
         "api_name": "\u8ffd\u52a0\u88c5\u7532(\u5927\u578b)",
         "api_show_flg": 1
       },
-      { "api_id": 29, "api_name": "\u63a2\u7167\u706f", "api_show_flg": 0 },
+      {"api_id": 29, "api_name": "\u63a2\u7167\u706f", "api_show_flg": 0},
       {
         "api_id": 30,
         "api_name": "\u7c21\u6613\u8f38\u9001\u90e8\u6750",
@@ -61042,7 +61042,7 @@
         "api_name": "\u6f5c\u6c34\u8266\u9b5a\u96f7",
         "api_show_flg": 0
       },
-      { "api_id": 33, "api_name": "\u7167\u660e\u5f3e", "api_show_flg": 0 },
+      {"api_id": 33, "api_name": "\u7167\u660e\u5f3e", "api_show_flg": 0},
       {
         "api_id": 34,
         "api_name": "\u53f8\u4ee4\u90e8\u65bd\u8a2d",
@@ -61188,7 +61188,7 @@
     "api_mst_equip_exslot_ship": {
       "33": {
         "api_ship_ids": null,
-        "api_stypes": { "99": 1 },
+        "api_stypes": {"99": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
@@ -61208,8 +61208,8 @@
           "883": 1,
           "888": 1
         },
-        "api_stypes": { "19": 1, "20": 1, "21": 1 },
-        "api_ctypes": { "41": 1 },
+        "api_stypes": {"19": 1, "20": 1, "21": 1},
+        "api_ctypes": {"41": 1},
         "api_req_level": 0
       },
       "220": {
@@ -61228,8 +61228,8 @@
           "883": 1,
           "888": 1
         },
-        "api_stypes": { "19": 1, "20": 1, "21": 1 },
-        "api_ctypes": { "41": 1 },
+        "api_stypes": {"19": 1, "20": 1, "21": 1},
+        "api_ctypes": {"41": 1},
         "api_req_level": 0
       },
       "71": {
@@ -61245,7 +61245,7 @@
           "954": 1
         },
         "api_stypes": null,
-        "api_ctypes": { "52": 1, "43": 1 },
+        "api_ctypes": {"52": 1, "43": 1},
         "api_req_level": 0
       },
       "275": {
@@ -61261,11 +61261,11 @@
           "954": 1
         },
         "api_stypes": null,
-        "api_ctypes": { "52": 1, "43": 1 },
+        "api_ctypes": {"52": 1, "43": 1},
         "api_req_level": 0
       },
       "408": {
-        "api_ship_ids": { "621": 1, "626": 1 },
+        "api_ship_ids": {"621": 1, "626": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
@@ -61286,73 +61286,73 @@
       },
       "442": {
         "api_ship_ids": null,
-        "api_stypes": { "13": 1, "14": 1 },
+        "api_stypes": {"13": 1, "14": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "443": {
         "api_ship_ids": null,
-        "api_stypes": { "13": 1, "14": 1 },
+        "api_stypes": {"13": 1, "14": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "10": {
-        "api_ship_ids": { "911": 1, "546": 1, "916": 1, "593": 1, "954": 1 },
+        "api_ship_ids": {"911": 1, "546": 1, "916": 1, "593": 1, "954": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "12": {
-        "api_ship_ids": { "911": 1, "546": 1, "916": 1 },
+        "api_ship_ids": {"911": 1, "546": 1, "916": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "130": {
-        "api_ship_ids": { "911": 1, "546": 1, "916": 1, "593": 1, "954": 1 },
+        "api_ship_ids": {"911": 1, "546": 1, "916": 1, "593": 1, "954": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "142": {
-        "api_ship_ids": { "911": 1, "546": 1, "916": 1 },
+        "api_ship_ids": {"911": 1, "546": 1, "916": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "234": {
-        "api_ship_ids": { "911": 1, "546": 1, "916": 1 },
+        "api_ship_ids": {"911": 1, "546": 1, "916": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "460": {
-        "api_ship_ids": { "911": 1, "546": 1, "916": 1 },
+        "api_ship_ids": {"911": 1, "546": 1, "916": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "463": {
-        "api_ship_ids": { "911": 1, "546": 1, "916": 1 },
+        "api_ship_ids": {"911": 1, "546": 1, "916": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "464": {
-        "api_ship_ids": { "911": 1, "546": 1, "916": 1, "593": 1, "954": 1 },
+        "api_ship_ids": {"911": 1, "546": 1, "916": 1, "593": 1, "954": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "477": {
         "api_ship_ids": null,
-        "api_stypes": { "7": 1, "11": 1, "18": 1 },
+        "api_stypes": {"7": 1, "11": 1, "18": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "478": {
         "api_ship_ids": null,
-        "api_stypes": { "7": 1, "11": 1, "18": 1 },
+        "api_stypes": {"7": 1, "11": 1, "18": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
@@ -61368,7 +61368,7 @@
           "694": 1
         },
         "api_stypes": null,
-        "api_ctypes": { "30": 1, "38": 1, "101": 1 },
+        "api_ctypes": {"30": 1, "38": 1, "101": 1},
         "api_req_level": 0
       },
       "88": {
@@ -61383,7 +61383,7 @@
           "694": 1
         },
         "api_stypes": null,
-        "api_ctypes": { "30": 1, "38": 1, "101": 1 },
+        "api_ctypes": {"30": 1, "38": 1, "101": 1},
         "api_req_level": 0
       },
       "240": {
@@ -61398,7 +61398,7 @@
           "694": 1
         },
         "api_stypes": null,
-        "api_ctypes": { "30": 1, "38": 1, "101": 1 },
+        "api_ctypes": {"30": 1, "38": 1, "101": 1},
         "api_req_level": 0
       },
       "517": {
@@ -61413,17 +61413,17 @@
           "694": 1
         },
         "api_stypes": null,
-        "api_ctypes": { "30": 1, "38": 1, "101": 1 },
+        "api_ctypes": {"30": 1, "38": 1, "101": 1},
         "api_req_level": 4
       },
       "410": {
-        "api_ship_ids": { "593": 1, "954": 1, "591": 1, "592": 1, "694": 1 },
+        "api_ship_ids": {"593": 1, "954": 1, "591": 1, "592": 1, "694": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "411": {
-        "api_ship_ids": { "593": 1, "954": 1, "591": 1, "592": 1, "694": 1 },
+        "api_ship_ids": {"593": 1, "954": 1, "591": 1, "592": 1, "694": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
@@ -61438,7 +61438,7 @@
           "986": 1
         },
         "api_stypes": null,
-        "api_ctypes": { "38": 1, "54": 1, "101": 1, "41": 1, "52": 1 },
+        "api_ctypes": {"38": 1, "54": 1, "101": 1, "41": 1, "52": 1},
         "api_req_level": 0
       },
       "106": {
@@ -61451,7 +61451,7 @@
           "986": 1
         },
         "api_stypes": null,
-        "api_ctypes": { "38": 1, "54": 1, "101": 1, "41": 1, "52": 1 },
+        "api_ctypes": {"38": 1, "54": 1, "101": 1, "41": 1, "52": 1},
         "api_req_level": 0
       },
       "450": {
@@ -61464,7 +61464,7 @@
           "986": 1
         },
         "api_stypes": null,
-        "api_ctypes": { "38": 1, "54": 1, "101": 1, "41": 1, "52": 1 },
+        "api_ctypes": {"38": 1, "54": 1, "101": 1, "41": 1, "52": 1},
         "api_req_level": 0
       },
       "506": {
@@ -61494,81 +61494,81 @@
         "api_req_level": 0
       },
       "226": {
-        "api_ship_ids": { "145": 1, "961": 1 },
-        "api_stypes": { "1": 1 },
+        "api_ship_ids": {"145": 1, "961": 1},
+        "api_stypes": {"1": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "227": {
-        "api_ship_ids": { "145": 1, "961": 1 },
-        "api_stypes": { "1": 1 },
+        "api_ship_ids": {"145": 1, "961": 1},
+        "api_stypes": {"1": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "488": {
-        "api_ship_ids": { "145": 1, "961": 1 },
-        "api_stypes": { "1": 1 },
+        "api_ship_ids": {"145": 1, "961": 1},
+        "api_stypes": {"1": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "34": {
-        "api_ship_ids": { "229": 1, "316": 1, "951": 1 },
+        "api_ship_ids": {"229": 1, "316": 1, "951": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "87": {
-        "api_ship_ids": { "229": 1, "316": 1, "951": 1 },
+        "api_ship_ids": {"229": 1, "316": 1, "951": 1},
         "api_stypes": null,
         "api_ctypes": null,
         "api_req_level": 0
       },
       "35": {
         "api_ship_ids": null,
-        "api_stypes": { "5": 1, "6": 1, "8": 1, "9": 1, "10": 1 },
+        "api_stypes": {"5": 1, "6": 1, "8": 1, "9": 1, "10": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "317": {
         "api_ship_ids": null,
-        "api_stypes": { "5": 1, "6": 1, "8": 1, "9": 1, "10": 1 },
+        "api_stypes": {"5": 1, "6": 1, "8": 1, "9": 1, "10": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "483": {
         "api_ship_ids": null,
-        "api_stypes": { "5": 1, "6": 1, "8": 1, "9": 1, "10": 1 },
+        "api_stypes": {"5": 1, "6": 1, "8": 1, "9": 1, "10": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "210": {
         "api_ship_ids": null,
-        "api_stypes": { "13": 1, "14": 1 },
+        "api_stypes": {"13": 1, "14": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "211": {
         "api_ship_ids": null,
-        "api_stypes": { "13": 1, "14": 1 },
+        "api_stypes": {"13": 1, "14": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "384": {
         "api_ship_ids": null,
-        "api_stypes": { "13": 1, "14": 1 },
+        "api_stypes": {"13": 1, "14": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "458": {
         "api_ship_ids": null,
-        "api_stypes": { "13": 1, "14": 1 },
+        "api_stypes": {"13": 1, "14": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "519": {
         "api_ship_ids": null,
         "api_stypes": null,
-        "api_ctypes": { "114": 1, "122": 1 },
+        "api_ctypes": {"114": 1, "122": 1},
         "api_req_level": 0
       },
       "525": {
@@ -61599,26 +61599,26 @@
       },
       "524": {
         "api_ship_ids": null,
-        "api_stypes": { "17": 1, "19": 1, "20": 1, "21": 1, "22": 1 },
+        "api_stypes": {"17": 1, "19": 1, "20": 1, "21": 1, "22": 1},
         "api_ctypes": null,
         "api_req_level": 0
       },
       "527": {
         "api_ship_ids": null,
         "api_stypes": null,
-        "api_ctypes": { "88": 1, "67": 1, "108": 1, "78": 1, "112": 1 },
+        "api_ctypes": {"88": 1, "67": 1, "108": 1, "78": 1, "112": 1},
         "api_req_level": 0
       },
       "528": {
         "api_ship_ids": null,
         "api_stypes": null,
-        "api_ctypes": { "88": 1, "67": 1, "108": 1 },
+        "api_ctypes": {"88": 1, "67": 1, "108": 1},
         "api_req_level": 0
       },
       "124": {
         "api_ship_ids": null,
         "api_stypes": null,
-        "api_ctypes": { "47": 1, "55": 1 },
+        "api_ctypes": {"47": 1, "55": 1},
         "api_req_level": 7
       }
     },
@@ -85528,11 +85528,11 @@
         "api_name": "\u5357\u897f\u8af8\u5cf6\u6d77\u57df",
         "api_type": 0
       },
-      { "api_id": 3, "api_name": "\u5317\u65b9\u6d77\u57df", "api_type": 0 },
-      { "api_id": 4, "api_name": "\u897f\u65b9\u6d77\u57df", "api_type": 0 },
-      { "api_id": 5, "api_name": "\u5357\u65b9\u6d77\u57df", "api_type": 0 },
-      { "api_id": 6, "api_name": "\u4e2d\u90e8\u6d77\u57df", "api_type": 0 },
-      { "api_id": 7, "api_name": "\u5357\u897f\u6d77\u57df", "api_type": 0 }
+      {"api_id": 3, "api_name": "\u5317\u65b9\u6d77\u57df", "api_type": 0},
+      {"api_id": 4, "api_name": "\u897f\u65b9\u6d77\u57df", "api_type": 0},
+      {"api_id": 5, "api_name": "\u5357\u65b9\u6d77\u57df", "api_type": 0},
+      {"api_id": 6, "api_name": "\u4e2d\u90e8\u6d77\u57df", "api_type": 0},
+      {"api_id": 7, "api_name": "\u5357\u897f\u6d77\u57df", "api_type": 0}
     ],
     "api_mst_mapinfo": [
       {
@@ -87494,9 +87494,9 @@
       }
     ],
     "api_mst_const": {
-      "api_boko_max_ships": { "api_string_value": "", "api_int_value": 660 },
-      "api_dpflag_quest": { "api_string_value": "", "api_int_value": 1 },
-      "api_parallel_quest_max": { "api_string_value": "", "api_int_value": 10 }
+      "api_boko_max_ships": {"api_string_value": "", "api_int_value": 660},
+      "api_dpflag_quest": {"api_string_value": "", "api_int_value": 1},
+      "api_parallel_quest_max": {"api_string_value": "", "api_int_value": 10}
     },
     "api_mst_shipupgrade": [
       {
@@ -91996,16 +91996,16 @@
       }
     ],
     "api_mst_bgm": [
-      { "api_id": 101, "api_name": "\u6bcd\u6e2f" },
-      { "api_id": 105, "api_name": "\u79cb\u306e\u93ae\u5b88\u5e9c" },
-      { "api_id": 106, "api_name": "\u6b66\u8535\u306e\u5e30\u6295" },
-      { "api_id": 107, "api_name": "\u51ac\u306e\u629c\u9328" },
-      { "api_id": 108, "api_name": "\u8fce\u6625\u306e\u93ae\u5b88\u5e9c" },
+      {"api_id": 101, "api_name": "\u6bcd\u6e2f"},
+      {"api_id": 105, "api_name": "\u79cb\u306e\u93ae\u5b88\u5e9c"},
+      {"api_id": 106, "api_name": "\u6b66\u8535\u306e\u5e30\u6295"},
+      {"api_id": 107, "api_name": "\u51ac\u306e\u629c\u9328"},
+      {"api_id": 108, "api_name": "\u8fce\u6625\u306e\u93ae\u5b88\u5e9c"},
       {
         "api_id": 109,
         "api_name": "\u7b2c\u4e94\u6226\u968a\u306e\u51fa\u6483"
       },
-      { "api_id": 110, "api_name": "\u7bc0\u5206\u306e\u93ae\u5b88\u5e9c" },
+      {"api_id": 110, "api_name": "\u7bc0\u5206\u306e\u93ae\u5b88\u5e9c"},
       {
         "api_id": 111,
         "api_name": "\u8266\u5a18\u306e\u304a\u83d3\u5b50\u4f5c\u308a"
@@ -92018,12 +92018,12 @@
         "api_id": 113,
         "api_name": "\u7766\u6708\u578b\u99c6\u9010\u8266\u306e\u6226\u3044"
       },
-      { "api_id": 114, "api_name": "\u96e8\u97f3\u306e\u93ae\u5b88\u5e9c" },
+      {"api_id": 114, "api_name": "\u96e8\u97f3\u306e\u93ae\u5b88\u5e9c"},
       {
         "api_id": 115,
         "api_name": "\u96e8\u3068\u304a\u9152\u3068\u8266\u5a18"
       },
-      { "api_id": 116, "api_name": "\u6d5c\u8fba\u306e\u8266\u5a18" },
+      {"api_id": 116, "api_name": "\u6d5c\u8fba\u306e\u8266\u5a18"},
       {
         "api_id": 117,
         "api_name": "\u52a0\u8cc0\u5cac\u6539(\u6bcd\u6e2fver)"
@@ -92032,23 +92032,23 @@
         "api_id": 118,
         "api_name": "\u93ae\u5b88\u5e9c\u306e\u79cb\u796d\u308a"
       },
-      { "api_id": 119, "api_name": "\u8056\u591c\u306e\u6bcd\u6e2f" },
-      { "api_id": 120, "api_name": "-" },
+      {"api_id": 119, "api_name": "\u8056\u591c\u306e\u6bcd\u6e2f"},
+      {"api_id": 120, "api_name": "-"},
       {
         "api_id": 121,
         "api_name": "\u63d0\u7763\u3068\u8266\u5a18\u306e\u98df\u5353"
       },
-      { "api_id": 122, "api_name": "-" },
-      { "api_id": 123, "api_name": "\u9082\u9005" },
-      { "api_id": 124, "api_name": "\u6c34\u7740\u306e\u51fa\u6483" },
-      { "api_id": 125, "api_name": "\u57fa\u5730\u822a\u7a7a\u968a" },
-      { "api_id": 126, "api_name": "-" },
-      { "api_id": 127, "api_name": "\u7c89\u96ea\u306e\u964d\u308b\u591c" },
-      { "api_id": 128, "api_name": "\u5e2b\u8d70\u306e\u93ae\u5b88\u5e9c" },
-      { "api_id": 129, "api_name": "\u9023\u5408\u8266\u968a\u65d7\u8266" },
-      { "api_id": 130, "api_name": "\u7948\u308a" },
-      { "api_id": 131, "api_name": "\u6d77\u5ce1\u3078" },
-      { "api_id": 136, "api_name": "\u6d77\u4e0a\u8b77\u885b\u6226" },
+      {"api_id": 122, "api_name": "-"},
+      {"api_id": 123, "api_name": "\u9082\u9005"},
+      {"api_id": 124, "api_name": "\u6c34\u7740\u306e\u51fa\u6483"},
+      {"api_id": 125, "api_name": "\u57fa\u5730\u822a\u7a7a\u968a"},
+      {"api_id": 126, "api_name": "-"},
+      {"api_id": 127, "api_name": "\u7c89\u96ea\u306e\u964d\u308b\u591c"},
+      {"api_id": 128, "api_name": "\u5e2b\u8d70\u306e\u93ae\u5b88\u5e9c"},
+      {"api_id": 129, "api_name": "\u9023\u5408\u8266\u968a\u65d7\u8266"},
+      {"api_id": 130, "api_name": "\u7948\u308a"},
+      {"api_id": 131, "api_name": "\u6d77\u5ce1\u3078"},
+      {"api_id": 136, "api_name": "\u6d77\u4e0a\u8b77\u885b\u6226"},
       {
         "api_id": 137,
         "api_name": "\u7d22\u6575\u6a5f\u3001\u767a\u8266\u59cb\u3081\uff01"
@@ -92069,27 +92069,27 @@
         "api_id": 141,
         "api_name": "\u93ae\u5b88\u5e9c\u79cb\u5200\u9b5a\u796d\u308a\u6539\u4e09"
       },
-      { "api_id": 142, "api_name": "\u51ac\u306e\u8266\u968a" },
+      {"api_id": 142, "api_name": "\u51ac\u306e\u8266\u968a"},
       {
         "api_id": 143,
         "api_name": "\u6681\u306e\u6c34\u5e73\u7dda\u306b(inst.ver)"
       },
-      { "api_id": 144, "api_name": "\u9577\u6ce2\u3001\u99c6\u3051\u308b" },
-      { "api_id": 145, "api_name": "\u7279\u578b\u99c6\u9010\u8266" },
-      { "api_id": 146, "api_name": "\u52a0\u8cc0\u5cac" },
-      { "api_id": 147, "api_name": "\u980c\u6625\u4ee4\u548c\u306e\u6d77" },
-      { "api_id": 148, "api_name": "\u773c\u4e0b\u306e\u4f0a\u53f7" },
+      {"api_id": 144, "api_name": "\u9577\u6ce2\u3001\u99c6\u3051\u308b"},
+      {"api_id": 145, "api_name": "\u7279\u578b\u99c6\u9010\u8266"},
+      {"api_id": 146, "api_name": "\u52a0\u8cc0\u5cac"},
+      {"api_id": 147, "api_name": "\u980c\u6625\u4ee4\u548c\u306e\u6d77"},
+      {"api_id": 148, "api_name": "\u773c\u4e0b\u306e\u4f0a\u53f7"},
       {
         "api_id": 149,
         "api_name": "\u9023\u5408\u8266\u968a\u306e\u51fa\u6483"
       },
-      { "api_id": 150, "api_name": "\u6839\u5ba4\u6c96\u306e\u8f1d\u304d" },
+      {"api_id": 150, "api_name": "\u6839\u5ba4\u6c96\u306e\u8f1d\u304d"},
       {
         "api_id": 151,
         "api_name": "\u65b0\u3057\u3044\u5e74\u306e\u8b77\u308a"
       },
-      { "api_id": 152, "api_name": "\u672a\u6765(\u3044\u307e)" },
-      { "api_id": 153, "api_name": "Valentine\u2019s Sea" },
+      {"api_id": 152, "api_name": "\u672a\u6765(\u3044\u307e)"},
+      {"api_id": 153, "api_name": "Valentine\u2019s Sea"},
       {
         "api_id": 154,
         "api_name": "\u8266\u968a10\u5468\u5e74\u306e\u629c\u9328"
@@ -92102,10 +92102,10 @@
         "api_id": 156,
         "api_name": "\u93ae\u5b88\u5e9c\u79cb\u5200\u9b5a\u796d\u308a\u6539\u4e8c"
       },
-      { "api_id": 205, "api_name": "\u79cb\u6708\u306e\u7a7a" },
-      { "api_id": 206, "api_name": "\u660e\u77f3\u306e\u5de5\u5ee0" },
-      { "api_id": 207, "api_name": "\u51ac\u306e\u629c\u9328" },
-      { "api_id": 208, "api_name": "\u6d77\u4e0a\u8b77\u885b\u6226" },
+      {"api_id": 205, "api_name": "\u79cb\u6708\u306e\u7a7a"},
+      {"api_id": 206, "api_name": "\u660e\u77f3\u306e\u5de5\u5ee0"},
+      {"api_id": 207, "api_name": "\u51ac\u306e\u629c\u9328"},
+      {"api_id": 208, "api_name": "\u6d77\u4e0a\u8b77\u885b\u6226"},
       {
         "api_id": 209,
         "api_name": "\u7d22\u6575\u6a5f\u3001\u767a\u8266\u59cb\u3081\uff01"
@@ -92114,10 +92114,10 @@
         "api_id": 210,
         "api_name": "\u9023\u5408\u8266\u968a\u306e\u51fa\u6483"
       },
-      { "api_id": 211, "api_name": "\u51ac\u306e\u8266\u968a" },
-      { "api_id": 212, "api_name": "\u8fce\u6625\u306e\u93ae\u5b88\u5e9c" },
-      { "api_id": 213, "api_name": "\u58eb\u9b42\u306e\u8b77\u308a" },
-      { "api_id": 214, "api_name": "\u7279\u578b\u99c6\u9010\u8266" },
+      {"api_id": 211, "api_name": "\u51ac\u306e\u8266\u968a"},
+      {"api_id": 212, "api_name": "\u8fce\u6625\u306e\u93ae\u5b88\u5e9c"},
+      {"api_id": 213, "api_name": "\u58eb\u9b42\u306e\u8b77\u308a"},
+      {"api_id": 214, "api_name": "\u7279\u578b\u99c6\u9010\u8266"},
       {
         "api_id": 215,
         "api_name": "\u8266\u5a18\u306e\u304a\u83d3\u5b50\u4f5c\u308a"
@@ -92126,18 +92126,18 @@
         "api_id": 216,
         "api_name": "\u6843\u306e\u7bc0\u53e5\u3068\u8266\u5a18"
       },
-      { "api_id": 217, "api_name": "\u6b66\u8535\u306e\u5e30\u6295" },
-      { "api_id": 218, "api_name": "\u96e8\u97f3\u306e\u93ae\u5b88\u5e9c" },
+      {"api_id": 217, "api_name": "\u6b66\u8535\u306e\u5e30\u6295"},
+      {"api_id": 218, "api_name": "\u96e8\u97f3\u306e\u93ae\u5b88\u5e9c"},
       {
         "api_id": 219,
         "api_name": "\u96e8\u3068\u304a\u9152\u3068\u8266\u5a18"
       },
-      { "api_id": 220, "api_name": "\u6681\u306e\u6c34\u5e73\u7dda\u306b" },
-      { "api_id": 221, "api_name": "\u93ae\u5b88\u5e9c\u306e\u671d" },
-      { "api_id": 222, "api_name": "\u83ef\u306e\u4e8c\u6c34\u6226" },
-      { "api_id": 223, "api_name": "\u63d0\u7763\u3068\u306e\u7d46" },
-      { "api_id": 224, "api_name": "\u6d5c\u8fba\u306e\u8266\u5a18" },
-      { "api_id": 225, "api_name": "\u52a0\u8cc0\u5cac" },
+      {"api_id": 220, "api_name": "\u6681\u306e\u6c34\u5e73\u7dda\u306b"},
+      {"api_id": 221, "api_name": "\u93ae\u5b88\u5e9c\u306e\u671d"},
+      {"api_id": 222, "api_name": "\u83ef\u306e\u4e8c\u6c34\u6226"},
+      {"api_id": 223, "api_name": "\u63d0\u7763\u3068\u306e\u7d46"},
+      {"api_id": 224, "api_name": "\u6d5c\u8fba\u306e\u8266\u5a18"},
+      {"api_id": 225, "api_name": "\u52a0\u8cc0\u5cac"},
       {
         "api_id": 226,
         "api_name": "\u52a0\u8cc0\u5cac\u6539(\u6bcd\u6e2fver)"
@@ -92146,27 +92146,27 @@
         "api_id": 227,
         "api_name": "\u93ae\u5b88\u5e9c\u306e\u79cb\u796d\u308a"
       },
-      { "api_id": 228, "api_name": "\u8056\u591c\u306e\u6bcd\u6e2f" },
+      {"api_id": 228, "api_name": "\u8056\u591c\u306e\u6bcd\u6e2f"},
       {
         "api_id": 229,
         "api_name": "\u63d0\u7763\u3068\u8266\u5a18\u306e\u98df\u5353"
       },
-      { "api_id": 230, "api_name": "\u6c34\u7740\u306e\u51fa\u6483" },
+      {"api_id": 230, "api_name": "\u6c34\u7740\u306e\u51fa\u6483"},
       {
         "api_id": 231,
         "api_name": "\u93ae\u5b88\u5e9c\u79cb\u5200\u9b5a\u796d\u308a\u6539"
       },
-      { "api_id": 232, "api_name": "\u8266\u5a18\u97f3\u982d" },
-      { "api_id": 233, "api_name": "\u5674\u5f0f\u306e\u80ce\u52d5" },
-      { "api_id": 234, "api_name": "\u7c89\u96ea\u306e\u964d\u308b\u591c" },
-      { "api_id": 235, "api_name": "\u5e2b\u8d70\u306e\u93ae\u5b88\u5e9c" },
-      { "api_id": 236, "api_name": "\u9023\u5408\u8266\u968a\u65d7\u8266" },
+      {"api_id": 232, "api_name": "\u8266\u5a18\u97f3\u982d"},
+      {"api_id": 233, "api_name": "\u5674\u5f0f\u306e\u80ce\u52d5"},
+      {"api_id": 234, "api_name": "\u7c89\u96ea\u306e\u964d\u308b\u591c"},
+      {"api_id": 235, "api_name": "\u5e2b\u8d70\u306e\u93ae\u5b88\u5e9c"},
+      {"api_id": 236, "api_name": "\u9023\u5408\u8266\u968a\u65d7\u8266"},
       {
         "api_id": 237,
         "api_name": "\u6708\u591c\u6d77(\u3064\u304d\u3088\u307f)"
       },
-      { "api_id": 238, "api_name": "\u7948\u308a" },
-      { "api_id": 239, "api_name": "\u6708\u591c\u6d77 \u6dbc\u6708mode" },
+      {"api_id": 238, "api_name": "\u7948\u308a"},
+      {"api_id": 239, "api_name": "\u6708\u591c\u6d77 \u6dbc\u6708mode"},
       {
         "api_id": 240,
         "api_name": "\u96e8\u3068\u304a\u9152\u3068\u8266\u5a18(\u7b2c\u4e8c\u591c)"
@@ -92179,28 +92179,28 @@
         "api_id": 242,
         "api_name": "\u93ae\u5b88\u5e9c\u79cb\u5200\u9b5a\u796d\u308a\u6539\u4e09"
       },
-      { "api_id": 243, "api_name": "\u7bc0\u5206\u306e\u93ae\u5b88\u5e9c" },
-      { "api_id": 244, "api_name": "\u9577\u6ce2\u3001\u99c6\u3051\u308b" },
-      { "api_id": 245, "api_name": "\u745e\u96f2\u306e\u7a7a" },
-      { "api_id": 246, "api_name": "\u4e8c\u6c34\u6226\u306e\u822a\u8de1" },
-      { "api_id": 247, "api_name": "\u4f50\u4e16\u4fdd\u306e\u6642\u96e8" },
+      {"api_id": 243, "api_name": "\u7bc0\u5206\u306e\u93ae\u5b88\u5e9c"},
+      {"api_id": 244, "api_name": "\u9577\u6ce2\u3001\u99c6\u3051\u308b"},
+      {"api_id": 245, "api_name": "\u745e\u96f2\u306e\u7a7a"},
+      {"api_id": 246, "api_name": "\u4e8c\u6c34\u6226\u306e\u822a\u8de1"},
+      {"api_id": 247, "api_name": "\u4f50\u4e16\u4fdd\u306e\u6642\u96e8"},
       {
         "api_id": 248,
         "api_name": "\u9065\u304b\u306a\u308b\u30a6\u30eb\u30b7\u30fc\u6cca\u5730"
       },
-      { "api_id": 249, "api_name": "\u516b\u99c6\u306e\u8fce\u6483" },
+      {"api_id": 249, "api_name": "\u516b\u99c6\u306e\u8fce\u6483"},
       {
         "api_id": 250,
         "api_name": "\u30c8\u30e9\u30c3\u30af\u76ee\u6307\u3057\u3066"
       },
-      { "api_id": 251, "api_name": "\u52a0\u8cc0\u306e\u5f81\u304f\u6d77" },
+      {"api_id": 251, "api_name": "\u52a0\u8cc0\u306e\u5f81\u304f\u6d77"},
       {
         "api_id": 252,
         "api_name": "\u79cb\u96f2\u306e\u63cf\u304f\u30b9\u30b1\u30c3\u30c1"
       },
-      { "api_id": 253, "api_name": "\u96ea\u98a8\u306e\u5947\u8de1" },
-      { "api_id": 254, "api_name": "\u980c\u6625\u4ee4\u548c\u306e\u6d77" },
-      { "api_id": 255, "api_name": "Valentine\u2019s Sea" },
+      {"api_id": 253, "api_name": "\u96ea\u98a8\u306e\u5947\u8de1"},
+      {"api_id": 254, "api_name": "\u980c\u6625\u4ee4\u548c\u306e\u6d77"},
+      {"api_id": 255, "api_name": "Valentine\u2019s Sea"},
       {
         "api_id": 256,
         "api_name": "\u897f\u6751\u8266\u968a\u306e\u6226\u3044"
@@ -92209,34 +92209,34 @@
         "api_id": 257,
         "api_name": "\u30da\u30c7\u30b9\u30bf\u30eb\u4f5c\u6226"
       },
-      { "api_id": 258, "api_name": "Trick or Fleet!" },
-      { "api_id": 259, "api_name": "\u6839\u5ba4\u6c96\u306e\u8f1d\u304d" },
-      { "api_id": 260, "api_name": "Fleet for the end of the year" },
+      {"api_id": 258, "api_name": "Trick or Fleet!"},
+      {"api_id": 259, "api_name": "\u6839\u5ba4\u6c96\u306e\u8f1d\u304d"},
+      {"api_id": 260, "api_name": "Fleet for the end of the year"},
       {
         "api_id": 261,
         "api_name": "\u65b0\u3057\u3044\u5e74\u306e\u8b77\u308a"
       },
-      { "api_id": 262, "api_name": "\u4ee4\u548c\u6843\u306e\u7bc0\u53e5" },
-      { "api_id": 263, "api_name": "\u5317\u5927\u897f\u6d0b\u306e\u98a8" },
-      { "api_id": 264, "api_name": "\u6c96\u306b\u7acb\u3064\u6ce2" },
+      {"api_id": 262, "api_name": "\u4ee4\u548c\u6843\u306e\u7bc0\u53e5"},
+      {"api_id": 263, "api_name": "\u5317\u5927\u897f\u6d0b\u306e\u98a8"},
+      {"api_id": 264, "api_name": "\u6c96\u306b\u7acb\u3064\u6ce2"},
       {
         "api_id": 265,
         "api_name": "\u6751\u96e8\u3068\u5cef\u96f2\u306e\u51fa\u6483"
       },
-      { "api_id": 266, "api_name": "\u5730\u4e2d\u6d77\u306e\u6f6e\u98a8" },
-      { "api_id": 267, "api_name": "\u672a\u6765(\u3044\u307e)" },
+      {"api_id": 266, "api_name": "\u5730\u4e2d\u6d77\u306e\u6f6e\u98a8"},
+      {"api_id": 267, "api_name": "\u672a\u6765(\u3044\u307e)"},
       {
         "api_id": 268,
         "api_name": "\u8266\u968a10\u5468\u5e74\u306e\u629c\u9328"
       },
-      { "api_id": 269, "api_name": "\u591c\u306e\u7948\u308a" },
-      { "api_id": 270, "api_name": "Fleet Halloween Pumpkin" },
-      { "api_id": 271, "api_name": "\u6e05\u971c\u306e\u671d" },
+      {"api_id": 269, "api_name": "\u591c\u306e\u7948\u308a"},
+      {"api_id": 270, "api_name": "Fleet Halloween Pumpkin"},
+      {"api_id": 271, "api_name": "\u6e05\u971c\u306e\u671d"},
       {
         "api_id": 272,
         "api_name": "\u3082\u3082\u3061\u3068\u65b0\u3057\u304d\u671d"
       },
-      { "api_id": 273, "api_name": "\u6d77\u539f\u3078" },
+      {"api_id": 273, "api_name": "\u6d77\u539f\u3078"},
       {
         "api_id": 274,
         "api_name": "\u6d77\u306b\u5439\u304f\u78a7\u306e\u98a8"
@@ -92245,7 +92245,7 @@
         "api_id": 275,
         "api_name": "\u629c\u9328\uff01\u9d5c\u6765\u578b\u6d77\u9632\u8266"
       },
-      { "api_id": 276, "api_name": "\u516b\u6238\u306e\u76fe" }
+      {"api_id": 276, "api_name": "\u516b\u6238\u306e\u76fe"}
     ],
     "api_mst_equip_ship": [
       {
