@@ -1,5 +1,5 @@
 import {join} from 'path';
-import {equipmentCard, equipmentFull} from './mod.kcsapi.js';
+import {equipmentCard} from '../mod.kcsapi.js';
 import {DownloadFile} from '../../toolkit/http.mod.js';
 import {GetFilesOrFoldersName, MKDir} from '../../toolkit/fileIO.mod.js';
 

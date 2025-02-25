@@ -1,1233 +1,277 @@
 export interface ApiDataRoot {
-  api_result: number;
-  api_result_msg: string;
-  api_data: ApiData;
+  api_result: number; // 結果代碼
+  api_result_msg: string; // 結果訊息
+  api_data: ApiData; // 主要資料
 }
 
 export interface ApiData {
-  api_mst_ship: ApiMstShip[];
-  api_mst_shipgraph: ApiMstShipgraph[];
-  api_mst_slotitem_equiptype: ApiMstSlotitemEquiptype[];
-  api_mst_equip_exslot: number[];
-  api_mst_equip_exslot_ship: ApiMstEquipExslotShip;
-  api_mst_stype: ApiMstStype[];
-  api_mst_slotitem: ApiMstSlotitem[];
-  api_mst_furnituregraph: ApiMstFurnituregraph[];
-  api_mst_useitem: ApiMstUseitem[];
-  api_mst_payitem: ApiMstPayitem[];
-  api_mst_item_shop: ApiMstItemShop;
-  api_mst_maparea: ApiMstMaparea[];
-  api_mst_mapinfo: ApiMstMapinfo[];
-  api_mst_mapbgm: ApiMstMapbgm[];
-  api_mst_mission: ApiMstMission[];
-  api_mst_const: ApiMstConst;
-  api_mst_shipupgrade: ApiMstShipupgrade[];
-  api_mst_bgm: ApiMstBgm[];
-  api_mst_equip_ship: ApiMstEquipShip[];
-  api_mst_furniture: ApiMstFurniture[];
+  api_mst_ship: ApiMstShip[]; // 船艦資料
+  api_mst_shipgraph: ApiMstShipgraph[]; // 船艦圖像資料
+  api_mst_slotitem_equiptype: ApiMstSlotitemEquiptype[]; // 裝備類型資料
+  api_mst_equip_exslot: number[]; // 擴展裝備槽資料
+  api_mst_equip_exslot_ship: any; // 擴展裝備槽船艦資料
+  api_mst_stype: ApiMstStype[]; // 船艦類型資料
+  api_mst_slotitem: ApiMstSlotitem[]; // 裝備資料
+  api_mst_furnituregraph: ApiMstFurnituregraph[]; // 家具圖像資料
+  api_mst_useitem: ApiMstUseitem[]; // 使用物品資料
+  api_mst_payitem: ApiMstPayitem[]; // 付費物品資料
+  api_mst_item_shop: ApiMstItemShop; // 物品商店資料
+  api_mst_maparea: ApiMstMaparea[]; // 地圖區域資料
+  api_mst_mapinfo: ApiMstMapinfo[]; // 地圖資訊資料
+  api_mst_mapbgm: ApiMstMapbgm[]; // 地圖背景音樂資料
+  api_mst_mission: ApiMstMission[]; // 任務資料
+  api_mst_const: ApiMstConst; // 常數資料
+  api_mst_shipupgrade: ApiMstShipupgrade[]; // 船艦升級資料
+  api_mst_bgm: ApiMstBgm[]; // 背景音樂資料
+  api_mst_equip_ship: ApiMstEquipShip[]; // 裝備船艦資料
+  api_mst_furniture: ApiMstFurniture[]; // 家具資料
 }
 
 export interface ApiMstShip {
-  api_id: number;
-  api_sortno?: number;
-  api_sort_id: number;
-  api_name: string;
-  api_yomi: string;
-  api_stype: number;
-  api_ctype: number;
-  api_afterlv?: number;
-  api_aftershipid?: string;
-  api_taik?: number[];
-  api_souk?: number[];
-  api_houg?: number[];
-  api_raig?: number[];
-  api_tyku?: number[];
-  api_luck?: number[];
-  api_soku: number;
-  api_leng?: number;
-  api_slot_num: number;
-  api_maxeq?: number[];
-  api_buildtime?: number;
-  api_broken?: number[];
-  api_powup?: number[];
-  api_backs?: number;
-  api_getmes?: string;
-  api_afterfuel?: number;
-  api_afterbull?: number;
-  api_fuel_max?: number;
-  api_bull_max?: number;
-  api_voicef?: number;
-  api_tais?: number[];
+  api_id: number; // 船艦ID
+  api_sortno?: number; // 排序號碼
+  api_sort_id: number; // 排序ID
+  api_name: string; // 船艦名稱
+  api_yomi: string; // 船艦讀音
+  api_stype: number; // 船艦類型
+  api_ctype: number; // 船艦分類
+  api_afterlv?: number; // 升級所需等級
+  api_aftershipid?: string; // 升級後的船艦ID
+  api_taik?: number[]; // 耐久
+  api_souk?: number[]; // 裝甲
+  api_houg?: number[]; // 火力
+  api_raig?: number[]; // 雷裝
+  api_tyku?: number[]; // 對空
+  api_luck?: number[]; // 運
+  api_soku: number; // 速度
+  api_leng?: number; // 射程
+  api_slot_num: number; // 裝備槽數量
+  api_maxeq?: number[]; // 最大裝備數量
+  api_buildtime?: number; // 建造時間
+  api_broken?: number[]; // 解體資源
+  api_powup?: number[]; // 改修資源
+  api_backs?: number; // 背景
+  api_getmes?: string; // 獲得訊息
+  api_afterfuel?: number; // 升級所需燃料
+  api_afterbull?: number; // 升級所需彈藥
+  api_fuel_max?: number; // 最大燃料
+  api_bull_max?: number; // 最大彈藥
+  api_voicef?: number; // 聲音標誌
+  api_tais?: number[]; // 對潛
 }
 
 export interface ApiMstShipgraph {
-  api_id: number;
-  api_filename: string;
-  api_version: string[];
-  api_battle_n?: number[];
-  api_battle_d?: number[];
-  api_sortno?: number;
-  api_boko_n?: number[];
-  api_boko_d?: number[];
-  api_kaisyu_n?: number[];
-  api_kaisyu_d?: number[];
-  api_kaizo_n?: number[];
-  api_kaizo_d?: number[];
-  api_map_n?: number[];
-  api_map_d?: number[];
-  api_ensyuf_n?: number[];
-  api_ensyuf_d?: number[];
-  api_ensyue_n?: number[];
-  api_weda?: number[];
-  api_wedb?: number[];
-  api_pa?: number[];
-  api_pab?: number[];
-  api_wedc?: number[];
-  api_wedd?: number[];
-  api_sp_flag?: number;
+  api_id: number; // 圖像ID
+  api_filename: string; // 圖像檔名
+  api_version: string[]; // 圖像版本
+  api_battle_n?: number[]; // 戰鬥圖像（通常）
+  api_battle_d?: number[]; // 戰鬥圖像（損壞）
+  api_sortno?: number; // 排序號碼
+  api_boko_n?: number[]; // 母港圖像（通常）
+  api_boko_d?: number[]; // 母港圖像（損壞）
+  api_kaisyu_n?: number[]; // 改修圖像（通常）
+  api_kaisyu_d?: number[]; // 改修圖像（損壞）
+  api_kaizo_n?: number[]; // 改造圖像（通常）
+  api_kaizo_d?: number[]; // 改造圖像（損壞）
+  api_map_n?: number[]; // 地圖圖像（通常）
+  api_map_d?: number[]; // 地圖圖像（損壞）
+  api_ensyuf_n?: number[]; // 演習圖像（通常）
+  api_ensyuf_d?: number[]; // 演習圖像（損壞）
+  api_ensyue_n?: number[]; // 演習圖像（夜戰）
+  api_weda?: number[]; // 結婚圖像A
+  api_wedb?: number[]; // 結婚圖像B
+  api_pa?: number[]; // 攻擊圖像A
+  api_pab?: number[]; // 攻擊圖像B
+  api_wedc?: number[]; // 結婚圖像C
+  api_wedd?: number[]; // 結婚圖像D
+  api_sp_flag?: number; // 特殊標誌
 }
 
 export interface ApiMstSlotitemEquiptype {
-  api_id: number;
-  api_name: string;
-  api_show_flg: number;
-}
-
-export interface ApiMstEquipExslotShip {
-  '33': N33;
-  '66': N66;
-  '220': N220;
-  '71': N71;
-  '275': N275;
-  '408': N408;
-  '413': N413;
-  '442': N442;
-  '443': N443;
-  '10': N10;
-  '12': N12;
-  '130': N130;
-  '142': N142;
-  '234': N234;
-  '460': N460;
-  '463': N463;
-  '464': N464;
-  '477': N477;
-  '478': N478;
-  '28': N28;
-  '88': N88;
-  '240': N240;
-  '517': N517;
-  '410': N410;
-  '411': N411;
-  '27': N27;
-  '106': N106;
-  '450': N450;
-  '506': N506;
-  '226': N226;
-  '227': N227;
-  '488': N488;
-  '34': N34;
-  '87': N87;
-  '35': N35;
-  '317': N317;
-  '483': N483;
-  '210': N210;
-  '211': N211;
-  '384': N384;
-  '458': N458;
-  '519': N519;
-  '525': N525;
-  '526': N526;
-  '524': N524;
-  '527': N527;
-  '528': N528;
-  '124': N124;
-}
-
-export interface N33 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes {
-  '99': number;
-}
-
-export interface N66 {
-  api_ship_ids: ApiShipIds;
-  api_stypes: ApiStypes2;
-  api_ctypes: ApiCtypes;
-  api_req_level: number;
-}
-
-export interface ApiShipIds {
-  '488': number;
-  '501': number;
-  '502': number;
-  '503': number;
-  '504': number;
-  '506': number;
-  '507': number;
-  '508': number;
-  '509': number;
-  '894': number;
-  '899': number;
-  '883': number;
-  '888': number;
-}
-
-export interface ApiStypes2 {
-  '19': number;
-  '20': number;
-  '21': number;
-}
-
-export interface ApiCtypes {
-  '41': number;
-}
-
-export interface N220 {
-  api_ship_ids: ApiShipIds2;
-  api_stypes: ApiStypes3;
-  api_ctypes: ApiCtypes2;
-  api_req_level: number;
-}
-
-export interface ApiShipIds2 {
-  '488': number;
-  '501': number;
-  '502': number;
-  '503': number;
-  '504': number;
-  '506': number;
-  '507': number;
-  '508': number;
-  '509': number;
-  '894': number;
-  '899': number;
-  '883': number;
-  '888': number;
-}
-
-export interface ApiStypes3 {
-  '19': number;
-  '20': number;
-  '21': number;
-}
-
-export interface ApiCtypes2 {
-  '41': number;
-}
-
-export interface N71 {
-  api_ship_ids: ApiShipIds3;
-  api_stypes: any;
-  api_ctypes: ApiCtypes3;
-  api_req_level: number;
-}
-
-export interface ApiShipIds3 {
-  '894': number;
-  '899': number;
-  '136': number;
-  '148': number;
-  '911': number;
-  '546': number;
-  '916': number;
-  '593': number;
-  '954': number;
-}
-
-export interface ApiCtypes3 {
-  '52': number;
-  '43': number;
-}
-
-export interface N275 {
-  api_ship_ids: ApiShipIds4;
-  api_stypes: any;
-  api_ctypes: ApiCtypes4;
-  api_req_level: number;
-}
-
-export interface ApiShipIds4 {
-  '894': number;
-  '899': number;
-  '136': number;
-  '148': number;
-  '911': number;
-  '546': number;
-  '916': number;
-  '593': number;
-  '954': number;
-}
-
-export interface ApiCtypes4 {
-  '52': number;
-  '43': number;
-}
-
-export interface N408 {
-  api_ship_ids: ApiShipIds5;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds5 {
-  '621': number;
-  '626': number;
-}
-
-export interface N413 {
-  api_ship_ids: any;
-  api_stypes: any;
-  api_ctypes: ApiCtypes5;
-  api_req_level: number;
-}
-
-export interface ApiCtypes5 {
-  '38': number;
-  '54': number;
-  '4': number;
-  '16': number;
-  '20': number;
-  '41': number;
-  '52': number;
-}
-
-export interface N442 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes4;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes4 {
-  '13': number;
-  '14': number;
-}
-
-export interface N443 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes5;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes5 {
-  '13': number;
-  '14': number;
-}
-
-export interface N10 {
-  api_ship_ids: ApiShipIds6;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds6 {
-  '911': number;
-  '546': number;
-  '916': number;
-  '593': number;
-  '954': number;
-}
-
-export interface N12 {
-  api_ship_ids: ApiShipIds7;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds7 {
-  '911': number;
-  '546': number;
-  '916': number;
-}
-
-export interface N130 {
-  api_ship_ids: ApiShipIds8;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds8 {
-  '911': number;
-  '546': number;
-  '916': number;
-  '593': number;
-  '954': number;
-}
-
-export interface N142 {
-  api_ship_ids: ApiShipIds9;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds9 {
-  '911': number;
-  '546': number;
-  '916': number;
-}
-
-export interface N234 {
-  api_ship_ids: ApiShipIds10;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds10 {
-  '911': number;
-  '546': number;
-  '916': number;
-}
-
-export interface N460 {
-  api_ship_ids: ApiShipIds11;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds11 {
-  '911': number;
-  '546': number;
-  '916': number;
-}
-
-export interface N463 {
-  api_ship_ids: ApiShipIds12;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds12 {
-  '911': number;
-  '546': number;
-  '916': number;
-}
-
-export interface N464 {
-  api_ship_ids: ApiShipIds13;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds13 {
-  '911': number;
-  '546': number;
-  '916': number;
-  '593': number;
-  '954': number;
-}
-
-export interface N477 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes6;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes6 {
-  '7': number;
-  '11': number;
-  '18': number;
-}
-
-export interface N478 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes7;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes7 {
-  '7': number;
-  '11': number;
-  '18': number;
-}
-
-export interface N28 {
-  api_ship_ids: ApiShipIds14;
-  api_stypes: any;
-  api_ctypes: ApiCtypes6;
-  api_req_level: number;
-}
-
-export interface ApiShipIds14 {
-  '229': number;
-  '961': number;
-  '591': number;
-  '592': number;
-  '593': number;
-  '954': number;
-  '975': number;
-  '694': number;
-}
-
-export interface ApiCtypes6 {
-  '30': number;
-  '38': number;
-  '101': number;
-}
-
-export interface N88 {
-  api_ship_ids: ApiShipIds15;
-  api_stypes: any;
-  api_ctypes: ApiCtypes7;
-  api_req_level: number;
-}
-
-export interface ApiShipIds15 {
-  '229': number;
-  '961': number;
-  '591': number;
-  '592': number;
-  '593': number;
-  '954': number;
-  '975': number;
-  '694': number;
-}
-
-export interface ApiCtypes7 {
-  '30': number;
-  '38': number;
-  '101': number;
-}
-
-export interface N240 {
-  api_ship_ids: ApiShipIds16;
-  api_stypes: any;
-  api_ctypes: ApiCtypes8;
-  api_req_level: number;
-}
-
-export interface ApiShipIds16 {
-  '229': number;
-  '961': number;
-  '591': number;
-  '592': number;
-  '593': number;
-  '954': number;
-  '975': number;
-  '694': number;
-}
-
-export interface ApiCtypes8 {
-  '30': number;
-  '38': number;
-  '101': number;
-}
-
-export interface N517 {
-  api_ship_ids: ApiShipIds17;
-  api_stypes: any;
-  api_ctypes: ApiCtypes9;
-  api_req_level: number;
-}
-
-export interface ApiShipIds17 {
-  '229': number;
-  '961': number;
-  '591': number;
-  '592': number;
-  '593': number;
-  '954': number;
-  '975': number;
-  '694': number;
-}
-
-export interface ApiCtypes9 {
-  '30': number;
-  '38': number;
-  '101': number;
-}
-
-export interface N410 {
-  api_ship_ids: ApiShipIds18;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds18 {
-  '593': number;
-  '954': number;
-  '591': number;
-  '592': number;
-  '694': number;
-}
-
-export interface N411 {
-  api_ship_ids: ApiShipIds19;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds19 {
-  '593': number;
-  '954': number;
-  '591': number;
-  '592': number;
-  '694': number;
-}
-
-export interface N27 {
-  api_ship_ids: ApiShipIds20;
-  api_stypes: any;
-  api_ctypes: ApiCtypes10;
-  api_req_level: number;
-}
-
-export interface ApiShipIds20 {
-  '229': number;
-  '961': number;
-  '975': number;
-  '979': number;
-  '426': number;
-  '986': number;
-}
-
-export interface ApiCtypes10 {
-  '38': number;
-  '54': number;
-  '101': number;
-  '41': number;
-  '52': number;
-}
-
-export interface N106 {
-  api_ship_ids: ApiShipIds21;
-  api_stypes: any;
-  api_ctypes: ApiCtypes11;
-  api_req_level: number;
-}
-
-export interface ApiShipIds21 {
-  '229': number;
-  '961': number;
-  '975': number;
-  '979': number;
-  '426': number;
-  '986': number;
-}
-
-export interface ApiCtypes11 {
-  '38': number;
-  '54': number;
-  '101': number;
-  '41': number;
-  '52': number;
-}
-
-export interface N450 {
-  api_ship_ids: ApiShipIds22;
-  api_stypes: any;
-  api_ctypes: ApiCtypes12;
-  api_req_level: number;
-}
-
-export interface ApiShipIds22 {
-  '229': number;
-  '961': number;
-  '975': number;
-  '979': number;
-  '426': number;
-  '986': number;
-}
-
-export interface ApiCtypes12 {
-  '38': number;
-  '54': number;
-  '101': number;
-  '41': number;
-  '52': number;
-}
-
-export interface N506 {
-  api_ship_ids: ApiShipIds23;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds23 {
-  '407': number;
-  '147': number;
-  '235': number;
-  '419': number;
-  '464': number;
-  '470': number;
-  '961': number;
-  '557': number;
-  '558': number;
-  '656': number;
-  '578': number;
-  '537': number;
-  '538': number;
-  '955': number;
-  '960': number;
-  '975': number;
-  '968': number;
-  '956': number;
-  '981': number;
-}
-
-export interface N226 {
-  api_ship_ids: ApiShipIds24;
-  api_stypes: ApiStypes8;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds24 {
-  '145': number;
-  '961': number;
-}
-
-export interface ApiStypes8 {
-  '1': number;
-}
-
-export interface N227 {
-  api_ship_ids: ApiShipIds25;
-  api_stypes: ApiStypes9;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds25 {
-  '145': number;
-  '961': number;
-}
-
-export interface ApiStypes9 {
-  '1': number;
-}
-
-export interface N488 {
-  api_ship_ids: ApiShipIds26;
-  api_stypes: ApiStypes10;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds26 {
-  '145': number;
-  '961': number;
-}
-
-export interface ApiStypes10 {
-  '1': number;
-}
-
-export interface N34 {
-  api_ship_ids: ApiShipIds27;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds27 {
-  '229': number;
-  '316': number;
-  '951': number;
-}
-
-export interface N87 {
-  api_ship_ids: ApiShipIds28;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds28 {
-  '229': number;
-  '316': number;
-  '951': number;
-}
-
-export interface N35 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes11;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes11 {
-  '5': number;
-  '6': number;
-  '8': number;
-  '9': number;
-  '10': number;
-}
-
-export interface N317 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes12;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes12 {
-  '5': number;
-  '6': number;
-  '8': number;
-  '9': number;
-  '10': number;
-}
-
-export interface N483 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes13;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes13 {
-  '5': number;
-  '6': number;
-  '8': number;
-  '9': number;
-  '10': number;
-}
-
-export interface N210 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes14;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes14 {
-  '13': number;
-  '14': number;
-}
-
-export interface N211 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes15;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes15 {
-  '13': number;
-  '14': number;
-}
-
-export interface N384 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes16;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes16 {
-  '13': number;
-  '14': number;
-}
-
-export interface N458 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes17;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes17 {
-  '13': number;
-  '14': number;
-}
-
-export interface N519 {
-  api_ship_ids: any;
-  api_stypes: any;
-  api_ctypes: ApiCtypes13;
-  api_req_level: number;
-}
-
-export interface ApiCtypes13 {
-  '114': number;
-  '122': number;
-}
-
-export interface N525 {
-  api_ship_ids: ApiShipIds29;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds29 {
-  '971': number;
-  '976': number;
-  '972': number;
-  '977': number;
-  '607': number;
-  '399': number;
-}
-
-export interface N526 {
-  api_ship_ids: ApiShipIds30;
-  api_stypes: any;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiShipIds30 {
-  '971': number;
-  '976': number;
-  '972': number;
-  '977': number;
-  '607': number;
-  '399': number;
-}
-
-export interface N524 {
-  api_ship_ids: any;
-  api_stypes: ApiStypes18;
-  api_ctypes: any;
-  api_req_level: number;
-}
-
-export interface ApiStypes18 {
-  '17': number;
-  '19': number;
-  '20': number;
-  '21': number;
-  '22': number;
-}
-
-export interface N527 {
-  api_ship_ids: any;
-  api_stypes: any;
-  api_ctypes: ApiCtypes14;
-  api_req_level: number;
-}
-
-export interface ApiCtypes14 {
-  '88': number;
-  '67': number;
-  '108': number;
-  '78': number;
-  '112': number;
-}
-
-export interface N528 {
-  api_ship_ids: any;
-  api_stypes: any;
-  api_ctypes: ApiCtypes15;
-  api_req_level: number;
-}
-
-export interface ApiCtypes15 {
-  '88': number;
-  '67': number;
-  '108': number;
-}
-
-export interface N124 {
-  api_ship_ids: any;
-  api_stypes: any;
-  api_ctypes: ApiCtypes16;
-  api_req_level: number;
-}
-
-export interface ApiCtypes16 {
-  '47': number;
-  '55': number;
+  api_id: number; // 裝備類型ID
+  api_name: string; // 裝備類型名稱
+  api_show_flg: number; // 顯示標誌
 }
 
 export interface ApiMstStype {
-  api_id: number;
-  api_sortno: number;
-  api_name: string;
-  api_scnt: number;
-  api_kcnt: number;
-  api_equip_type: ApiEquipType;
-}
-
-export interface ApiEquipType {
-  '1': number;
-  '2': number;
-  '3': number;
-  '4': number;
-  '5': number;
-  '6': number;
-  '7': number;
-  '8': number;
-  '9': number;
-  '10': number;
-  '11': number;
-  '12': number;
-  '13': number;
-  '14': number;
-  '15': number;
-  '16': number;
-  '17': number;
-  '18': number;
-  '19': number;
-  '20': number;
-  '21': number;
-  '22': number;
-  '23': number;
-  '24': number;
-  '25': number;
-  '26': number;
-  '27': number;
-  '28': number;
-  '29': number;
-  '30': number;
-  '31': number;
-  '32': number;
-  '33': number;
-  '34': number;
-  '35': number;
-  '36': number;
-  '37': number;
-  '38': number;
-  '39': number;
-  '40': number;
-  '41': number;
-  '42': number;
-  '43': number;
-  '44': number;
-  '45': number;
-  '46': number;
-  '47': number;
-  '48': number;
-  '49': number;
-  '50': number;
-  '51': number;
-  '52': number;
-  '53': number;
-  '54': number;
-  '55': number;
-  '56': number;
-  '57': number;
-  '58': number;
-  '59': number;
-  '60': number;
-  '61': number;
-  '62': number;
-  '63': number;
-  '64': number;
-  '65': number;
-  '66': number;
-  '67': number;
-  '68': number;
-  '69': number;
-  '70': number;
-  '71': number;
-  '72': number;
-  '73': number;
-  '74': number;
-  '75': number;
-  '76': number;
-  '77': number;
-  '78': number;
-  '79': number;
-  '80': number;
-  '81': number;
-  '82': number;
-  '83': number;
-  '84': number;
-  '85': number;
-  '86': number;
-  '87': number;
-  '88': number;
-  '89': number;
-  '90': number;
-  '91': number;
-  '92': number;
-  '93': number;
-  '94': number;
-  '95': number;
+  api_id: number; // 類型ID
+  api_sortno: number; // 排序號碼
+  api_name: string; // 類型名稱
+  api_scnt: number; // 類型數量
+  api_kcnt: number; // 類型數量
+  api_equip_type: number; // 裝備類型
 }
 
 export interface ApiMstSlotitem {
-  api_id: number;
-  api_sortno: number;
-  api_name: string;
-  api_type: number[];
-  api_taik: number;
-  api_souk: number;
-  api_houg: number;
-  api_raig: number;
-  api_soku: number;
-  api_baku: number;
-  api_tyku: number;
-  api_tais: number;
-  api_atap: number;
-  api_houm: number;
-  api_raim: number;
-  api_houk: number;
-  api_raik: number;
-  api_bakk: number;
-  api_saku: number;
-  api_sakb: number;
-  api_luck: number;
-  api_leng: number;
-  api_rare: number;
-  api_broken: number[];
-  api_usebull: string;
-  api_version?: number;
-  api_cost?: number;
-  api_distance?: number;
+  api_id: number; // 裝備ID
+  api_sortno: number; // 排序號碼
+  api_name: string; // 裝備名稱
+  api_type: number[]; // 裝備類型
+  api_taik: number; // 耐久
+  api_souk: number; // 裝甲
+  api_houg: number; // 火力
+  api_raig: number; // 雷裝
+  api_soku: number; // 速度
+  api_baku: number; // 爆裝
+  api_tyku: number; // 對空
+  api_tais: number; // 對潛
+  api_atap: number; // 對空
+  api_houm: number; // 命中
+  api_raim: number; // 雷擊命中
+  api_houk: number; // 回避
+  api_raik: number; // 雷擊回避
+  api_bakk: number; // 爆裝回避
+  api_saku: number; // 索敵
+  api_sakb: number; // 索敵回避
+  api_luck: number; // 運
+  api_leng: number; // 射程
+  api_rare: number; // 稀有度
+  api_broken: number[]; // 解體資源
+  api_usebull: string; // 使用彈藥
+  api_version?: number; // 版本
+  api_cost?: number; // 成本
+  api_distance?: number; // 距離
 }
 
 export interface ApiMstFurnituregraph {
-  api_id: number;
-  api_type: number;
-  api_no: number;
-  api_filename: string;
-  api_version: string;
+  api_id: number; // 家具圖像ID
+  api_type: number; // 家具類型
+  api_no: number; // 家具編號
+  api_filename: string; // 家具圖像檔名
+  api_version: string; // 家具圖像版本
 }
 
 export interface ApiMstUseitem {
-  api_id: number;
-  api_usetype: number;
-  api_category: number;
-  api_name: string;
-  api_description: string[];
-  api_price: number;
+  api_id: number; // 使用物品ID
+  api_usetype: number; // 使用類型
+  api_category: number; // 類別
+  api_name: string; // 名稱
+  api_description: string[]; // 描述
+  api_price: number; // 價格
 }
 
 export interface ApiMstPayitem {
-  api_id: number;
-  api_type: number;
-  api_name: string;
-  api_description: string;
-  api_shop_description: string;
-  api_item: number[];
-  api_price: number;
+  api_id: number; // 付費物品ID
+  api_type: number; // 類型
+  api_name: string; // 名稱
+  api_description: string; // 描述
+  api_shop_description: string; // 商店描述
+  api_item: number[]; // 物品
+  api_price: number; // 價格
 }
 
 export interface ApiMstItemShop {
-  api_cabinet_1: number[];
-  api_cabinet_2: number[];
+  api_cabinet_1: number[]; // 櫃子1
+  api_cabinet_2: number[]; // 櫃子2
 }
 
 export interface ApiMstMaparea {
-  api_id: number;
-  api_name: string;
-  api_type: number;
+  api_id: number; // 地圖區域ID
+  api_name: string; // 名稱
+  api_type: number; // 類型
 }
 
 export interface ApiMstMapinfo {
-  api_id: number;
-  api_maparea_id: number;
-  api_no: number;
-  api_name: string;
-  api_level: number;
-  api_opetext: string;
-  api_infotext: string;
-  api_item: number[];
-  api_max_maphp: any;
-  api_required_defeat_count?: number;
-  api_sally_flag: number[];
+  api_id: number; // 地圖資訊ID
+  api_maparea_id: number; // 地圖區域ID
+  api_no: number; // 編號
+  api_name: string; // 名稱
+  api_level: number; // 等級
+  api_opetext: string; // 操作文本
+  api_infotext: string; // 資訊文本
+  api_item: number[]; // 物品
+  api_max_maphp: any; // 最大地圖HP
+  api_required_defeat_count?: number; // 所需擊敗次數
+  api_sally_flag: number[]; // 出擊標誌
 }
 
 export interface ApiMstMapbgm {
-  api_id: number;
-  api_maparea_id: number;
-  api_no: number;
-  api_moving_bgm: number;
-  api_map_bgm: number[];
-  api_boss_bgm: number[];
+  api_id: number; // 地圖背景音樂ID
+  api_maparea_id: number; // 地圖區域ID
+  api_no: number; // 編號
+  api_moving_bgm: number; // 移動背景音樂
+  api_map_bgm: number[]; // 地圖背景音樂
+  api_boss_bgm: number[]; // Boss背景音樂
 }
 
 export interface ApiMstMission {
-  api_id: number;
-  api_disp_no: string;
-  api_maparea_id: number;
-  api_name: string;
-  api_details: string;
-  api_reset_type: number;
-  api_damage_type: number;
-  api_time: number;
-  api_deck_num: number;
-  api_difficulty: number;
-  api_use_fuel: number;
-  api_use_bull: number;
-  api_win_item1: number[];
-  api_win_item2: number[];
-  api_win_mat_level: number[];
-  api_return_flag: number;
-  api_sample_fleet: number[];
+  api_id: number; // 任務ID
+  api_disp_no: string; // 顯示編號
+  api_maparea_id: number; // 地圖區域ID
+  api_name: string; // 名稱
+  api_details: string; // 詳細信息
+  api_reset_type: number; // 重置類型
+  api_damage_type: number; // 傷害類型
+  api_time: number; // 時間
+  api_deck_num: number; // 艦隊數量
+  api_difficulty: number; // 難度
+  api_use_fuel: number; // 使用燃料
+  api_use_bull: number; // 使用彈藥
+  api_win_item1: number[]; // 獲勝物品1
+  api_win_item2: number[]; // 獲勝物品2
+  api_win_mat_level: number[]; // 獲勝材料等級
+  api_return_flag: number; // 返回標誌
+  api_sample_fleet: number[]; // 樣本艦隊
 }
 
 export interface ApiMstConst {
-  api_boko_max_ships: ApiBokoMaxShips;
-  api_dpflag_quest: ApiDpflagQuest;
-  api_parallel_quest_max: ApiParallelQuestMax;
+  api_boko_max_ships: ApiBokoMaxShips; // 最大船艦數量
+  api_dpflag_quest: ApiDpflagQuest; // 任務標誌
+  api_parallel_quest_max: ApiParallelQuestMax; // 最大並行任務數量
 }
 
 export interface ApiBokoMaxShips {
-  api_string_value: string;
-  api_int_value: number;
+  api_string_value: string; // 字符串值
+  api_int_value: number; // 整數值
 }
 
 export interface ApiDpflagQuest {
-  api_string_value: string;
-  api_int_value: number;
+  api_string_value: string; // 字符串值
+  api_int_value: number; // 整數值
 }
 
 export interface ApiParallelQuestMax {
-  api_string_value: string;
-  api_int_value: number;
+  api_string_value: string; // 字符串值
+  api_int_value: number; // 整數值
 }
 
 export interface ApiMstShipupgrade {
-  api_id: number;
-  api_current_ship_id: number;
-  api_original_ship_id: number;
-  api_upgrade_type: number;
-  api_upgrade_level: number;
-  api_drawing_count: number;
-  api_catapult_count: number;
-  api_report_count: number;
-  api_aviation_mat_count: number;
-  api_arms_mat_count: number;
-  api_tech_count: number;
-  api_sortno: number;
-  api_boiler_count?: number;
+  api_id: number; // 升級ID
+  api_current_ship_id: number; // 當前船艦ID
+  api_original_ship_id: number; // 原始船艦ID
+  api_upgrade_type: number; // 升級類型
+  api_upgrade_level: number; // 升級等級
+  api_drawing_count: number; // 繪圖數量
+  api_catapult_count: number; // 彈射器數量
+  api_report_count: number; // 報告數量
+  api_aviation_mat_count: number; // 航空材料數量
+  api_arms_mat_count: number; // 武器材料數量
+  api_tech_count: number; // 技術數量
+  api_sortno: number; // 排序號碼
+  api_boiler_count?: number; // 鍋爐數量
 }
 
 export interface ApiMstBgm {
-  api_id: number;
-  api_name: string;
+  api_id: number; // 背景音樂ID
+  api_name: string; // 名稱
 }
 
 export interface ApiMstEquipShip {
-  api_ship_id: number;
-  api_equip_type: number[];
+  api_ship_id: number; // 船艦ID
+  api_equip_type: number[]; // 裝備類型
 }
 
 export interface ApiMstFurniture {
-  api_id: number;
-  api_type: number;
-  api_no: number;
-  api_title: string;
-  api_description: string;
-  api_rarity: number;
-  api_price: number;
-  api_saleflg: number;
-  api_bgm_id: number;
-  api_version: number;
-  api_outside_id: number;
-  api_active_flag: number;
+  api_id: number; // 家具ID
+  api_type: number; // 類型
+  api_no: number; // 編號
+  api_title: string; // 標題
+  api_description: string; // 描述
+  api_rarity: number; // 稀有度
+  api_price: number; // 價格
+  api_saleflg: number; // 銷售標誌
+  api_bgm_id: number; // 背景音樂ID
+  api_version: number; // 版本
+  api_outside_id: number; // 外部ID
+  api_active_flag: number; // 活動標誌
 }

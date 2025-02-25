@@ -1,5 +1,5 @@
-import cgkeys from '../const.Cgkeys.js';
-import servers from '../const.Servers.js';
+import cgkeys from './const.Cgkeys.js';
+import servers from './const.Servers.js';
 
 const key = (input: string) =>
   input.split('').reduce((a: number, e: string) => a + e.charCodeAt(0), 0);

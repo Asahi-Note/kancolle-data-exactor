@@ -1,5 +1,5 @@
 import {join} from 'path';
-import {shipBanner, shipCard, shipFull} from './mod.kcsapi.js';
+import {shipBanner, shipCard, shipFull} from '../mod.kcsapi.js';
 import {DownloadFile} from '../../toolkit/http.mod.js';
 import {GetFilesOrFoldersName, MKDir} from '../../toolkit/fileIO.mod.js';
 
